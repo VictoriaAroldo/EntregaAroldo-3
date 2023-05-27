@@ -100,7 +100,6 @@ nav a:hover{
 }
 
 
-
 #noticias-slider {
     margin: auto;
     background-color: #866a80;
@@ -144,30 +143,32 @@ nav a:hover{
     padding: 0;
 }
 
-#noticias-slider .menu {
+.menu {
+    background-color: #866a80;
     text-align: center;
     margin: 20px;
+    padding: 20px;
 }
 
-#noticias-slider .menu li {
+.menu li {
     display: inline-block;
     text-align: center;
 }
 
-#noticias-slider .menu li a {
+.menu li a {
     display: inline-block;
     color: #c9b7c7;
     background-color: #4d3147;
     padding: 15px;
     margin: 5px;
     border: #4d3147 2px solid;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
     border-radius: 100%;
 }
 
-#noticias-slider .menu #AntSig {
+.menu #AntSig {
     display: inline-block;
     color: #c9b7c7;
     background-color: #4d3147;
@@ -176,16 +177,16 @@ nav a:hover{
     font-weight: normal;
     border: #4d3147 2px solid;
     width: 90px;
-    height: 20px;
-    font-size: 20px;
+    height: 18px;
+    font-size: 18px;
     border-radius: 5%;
 }
 
-#noticias-slider .menu #AntSig:hover{
+.menu #AntSig:hover{
     border: #c9b7c7 2px solid;
 }
 
-#noticias-slider .menu li a:hover{
+.menu li a:hover{
     border: #c9b7c7 2px solid;
     font-weight: bold;
 }
@@ -344,8 +345,14 @@ footer{
     }
 }
 @media (max-width:589px){
+    #MainTitle{
+        font-size: 35px;
+    }
+    .logo img{
+        height: 90px;
+    }
     header{
-        height: 350px;
+        height: 355px;
     }
     nav a{
         display: flex;
@@ -356,6 +363,25 @@ footer{
     }
     nav a:hover{
         border: 2px solid #c9b7c7;
+    }
+    
+    .grid-container img{
+        width: 300px;
+        height: auto;
+
+    }
+    .menu li a {
+        padding: 8px;
+        width: 12px;
+        height: 12px;
+        font-size: 12px;
+    }
+    
+    .menu #AntSig {
+        padding: 8px;
+        width: 50px;
+        height: 12px;
+        font-size: 12px;
     }
 }
 @media (min-width:1200px){
